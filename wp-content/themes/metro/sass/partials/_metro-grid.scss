@@ -1,0 +1,10 @@
+div.container{
+	@include outer-container();
+	@include clearfix;
+}
+#secondary{
+	@include span-columns(4);
+}
+#primary{
+	@include span-columns(8);
+}

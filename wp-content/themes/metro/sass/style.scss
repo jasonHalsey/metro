@@ -1,0 +1,29 @@
+/*
+Theme Name:   Metro
+Theme URI:    http://example.com/twenty-sixteen-child/
+Description:  Twenty Fifteen Child Theme
+Author:       Jason Halsey
+Author URI:   http://getg5.com
+Template:     twentysixteen
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         Custom for Metro, responsive-layout
+Text Domain:  twenty-sixteen-child
+*/
+
+//Compass
+@import "compass/reset";
+
+//Famework
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+
+//Metro Styles
+@import "partials/navigation";
+@import "partials/metro-grid";
+@import "partials/index_search";
+@import "partials/footer";
+@import "partials/variables";
+@import "partials/metro";

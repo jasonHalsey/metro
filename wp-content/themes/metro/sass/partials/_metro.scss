@@ -1,0 +1,81 @@
+a{
+	color: $primaryColor;
+}
+.entry-title{
+	padding: 10px 0;
+  line-height: 30px;
+  font-size: 180%;
+  a{
+  	text-decoration: none;
+  	-o-transition:.5s;
+	  -ms-transition:.5s;
+	  -moz-transition:.5s;
+	  -webkit-transition:.5s;
+	  /* ...and now for the proper property */
+	  transition:.5s;
+  	&:hover{
+  		color: $primaryColor;
+  		text-decoration: underline;
+  	}
+  }
+}
+.entry-footer{
+	font-size: 12px;
+	.cat-links{
+		ul.post-categories{
+			display: inline-block;
+		}
+	}
+	span.tagged-links{
+		display:block;	
+	}
+}
+#secondary{
+	h2{
+		  font-family: 'Open Sans';
+	    font-style: normal;
+	    font-weight: 600;
+	    font-size: 160%;
+	}
+	section.widget{
+		form{
+			margin-top: 2.0em;
+			label{
+				span{
+					color: #fff;
+			    background: #00795D;
+			    padding: 2px 10px;
+			    width:100%;
+			    display:block;
+			    font-size: 160%;
+				}
+			}
+			button{
+				background-color: $primaryColor;
+			}
+		}
+			  
+		
+		h2.widget-title{
+			color: #fff;
+	    background: #00795D;
+	    padding: 4px 10px;
+	    margin: 1.0em 0;
+		}
+	}
+
+	#employee {
+		margin-top: 4.0em;
+		border-top: 1px solid $secondaryColor;
+		padding: 2.0em 0;
+		img {
+	    margin: 0 auto;
+	    max-width: 160px;
+	    display: block;
+  	}
+  	p.pledge_text {
+	    text-align: center;
+	    font-weight: 600;
+  	}
+	}
+}
