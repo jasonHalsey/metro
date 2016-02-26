@@ -11,7 +11,6 @@ a{
 	  -ms-transition:.5s;
 	  -moz-transition:.5s;
 	  -webkit-transition:.5s;
-	  /* ...and now for the proper property */
 	  transition:.5s;
   	&:hover{
   		color: $primaryColor;
@@ -78,4 +77,8 @@ a{
 	    font-weight: 600;
   	}
 	}
+}
+
+h2.screen-reader-text{
+	display:none;
 }

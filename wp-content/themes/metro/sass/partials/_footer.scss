@@ -4,7 +4,32 @@
   border-top: 1px solid #2b7f68;
   padding: 2em 0;
 	font-family: "lato", "pt-sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	@include clearfix;
 	.site-info{
-		@include outer-container();
+		color:#e5e3e1;
+		font-size: 1.25em;
+		line-height: 1.25em;
+		a{
+			color:#e5e3e1;
+			&:hover{
+				color: #00795c;
+			}
+		}
+		h4, p{
+			margin:0 0 0.25em;
+		}
+		div.leftContain{
+			float:left;
+			margin-left: 2.0em;
+		}
+		div.RightContain{
+			float:right;
+			margin-right: 2.0em;
+			span.nav{
+				display: block;
+				text-align: right;
+				margin: 0 0 0.35em;
+			}
+		}
 	}
 }

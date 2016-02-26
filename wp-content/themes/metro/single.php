@@ -1,48 +1,58 @@
+
 <?php
 /**
- * The template for displaying all single posts and attachments
- *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
+ * @package _s
  */
 
 get_header(); ?>
 
+<div class="container">
+
+	<?php get_sidebar(); ?>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post();
+		<?php if ( have_posts() ) : ?>
 
-			/*
-			 * Include the post format-specific template for the content. If you want to
-			 * use this in a child theme, then include a file called called content-___.php
-			 * (where ___ is the post format) and that will be used instead.
-			 */
-			get_template_part( 'content', get_post_format() );
+			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+				<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+				<div class="entry-content">
+				
+					<?php the_content(); ?>
+				</div>
+				<footer class="entry-footer">
+					<span class="cat-links">Posted in&nbsp;<?php the_category(); ?></span>
+					<span class="tagged-links"><?php the_tags('Tagged '); ?></span>
+				</footer>
 
-			// Previous/next post navigation.
-			the_post_navigation( array(
-				'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'twentyfifteen' ) . '</span> ' .
-					'<span class="screen-reader-text">' . __( 'Next post:', 'twentyfifteen' ) . '</span> ' .
-					'<span class="post-title">%title</span>',
-				'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'twentyfifteen' ) . '</span> ' .
-					'<span class="screen-reader-text">' . __( 'Previous post:', 'twentyfifteen' ) . '</span> ' .
-					'<span class="post-title">%title</span>',
-			) );
 
-		// End the loop.
-		endwhile;
-		?>
+			<?php
+				// Previous/next post navigation.
+				the_post_navigation( array(
+				'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next:', 'twentyfifteen' ) . '</span> ' .
+				'<span class="screen-reader-text">' . __( '', 'twentyfifteen' ) . '</span> ' .
+				'<span class="post-title">%title</span>',
+				'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous:', 'twentyfifteen' ) . '</span> ' .
+				'<span class="screen-reader-text">' . __( '', 'twentyfifteen' ) . '</span> ' .
+				'<span class="post-title">%title</span>',
+				) );
+			?>
+			<?php endwhile; ?>
 
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
+			
 
+		<?php else : ?>
+
+			<?php get_template_part( 'content', 'none' ); ?>
+
+		<?php endif; ?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+</div><!-- #container -->
 <?php get_footer(); ?>

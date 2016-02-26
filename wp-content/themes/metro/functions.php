@@ -25,7 +25,7 @@ function change_excerpt_more()
   function new_excerpt_more($more)
     {
     // Use .read-more to style the link
-      return '<br /><span class="continue-reading"> <a href="' . get_permalink() . '"> Read More &#8594;</a></span>';
+      return '<br /><span class="continue-reading"> <a href="' . get_permalink() . '"> Read More &#10142;</a></span>';
     }
   add_filter('excerpt_more', 'new_excerpt_more');
 }
