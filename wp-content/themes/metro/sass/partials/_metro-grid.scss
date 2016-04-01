@@ -7,13 +7,18 @@ div.container{
 }
 #secondary{
 	@include span-columns(4);
+  float:left;
   @include media ($tablet) {
     @include span-columns(12);
   }
 }
 #primary{
 	@include span-columns(8);
+  float:right;
+  margin-right: 0;
+  margin-left:1.0em;
   @include media ($tablet) {
     @include span-columns(12);
+    margin-bottom: 2.0em;
   }
 }

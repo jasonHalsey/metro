@@ -16,7 +16,7 @@
 			<div class="leftContain">
 				<h4>Metro Self Storage</h4>
 				<p class="phone"><?php echo $GLOBALS['phone_number'] ?></p>
-				<p class="email"><a href="<?php echo $GLOBALS['email_url'] ?>">Email Us</a></p>
+				<p class="email"><a href="mailto:<?php echo $GLOBALS['email_url'] ?>">Email Us</a></p>
 			</div>
 
 			<div class="RightContain">

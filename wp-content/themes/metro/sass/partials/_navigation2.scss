@@ -89,11 +89,12 @@ header.navigation {
     z-index: 9999999;
     float: none;
     padding-top: 2em;
-    width: 75%;
+    width: 100%;
     overflow-y: visible;
 
     @include media ($horizontal-bar-mode) {
       float: right;
+      width: 75%;
     }
   }
 
@@ -120,12 +121,11 @@ header.navigation {
   // The nav items
 
   ul li.nav-link {
-    background: $navigation-background;
+    // background: $navigation-background;
     display: block;
     line-height: $navigation-height;
     overflow: hidden;
-    padding-right: 0.8em;
-    text-align: right;
+    text-align: center;
     width: 100%;
     z-index: 9999;
 
@@ -134,7 +134,9 @@ header.navigation {
       display: inline;
       line-height: $navigation-height;
       text-decoration: none;
+      padding-right: 0.8em;
       width: auto;
+      text-align: right;
     }
 
     a {
@@ -170,7 +172,10 @@ header.navigation {
     }
 
     > ul > li:first-child a  {
-      padding-top: 1em;
+      padding-top: 0em;
+       @include media($horizontal-bar-mode) {
+        padding-top: 1em;
+       }
     }
 
     a {
@@ -263,7 +268,7 @@ header.navigation {
       a {
         background-color: darken($navigation-background, 3%);
         display: inline-block;
-        text-align: right;
+        text-align: center;
         width: 100%;
 
         @include media($horizontal-bar-mode) {
