@@ -22,9 +22,12 @@ Text Domain:  twenty-sixteen-child
 
 //Metro Styles
 // @import "partials/navigation";
+@import "partials/variables";
 @import "partials/navigation2";
 @import "partials/metro-grid";
 @import "partials/index_search";
 @import "partials/footer";
-@import "partials/variables";
+
 @import "partials/metro";
+@import "partials/breadcrumbs";
+@import "partials/archive_template";
