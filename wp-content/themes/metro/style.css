@@ -814,6 +814,7 @@ div.container::after {
     margin-right: 2.35765%;
     width: 100%;
     margin-bottom: 2.0em;
+    margin-left: 0em;
   }
   /* line 89, sass/neat/grid/_span-columns.scss */
   #primary:last-child {
@@ -1061,24 +1062,25 @@ a {
 /* line 32, sass/partials/_metro.scss */
 .entry-footer .cat-links ul.post-categories {
   display: inline-block;
+  width: 100%;
 }
-/* line 36, sass/partials/_metro.scss */
+/* line 37, sass/partials/_metro.scss */
 .entry-footer span.tagged-links {
   display: block;
 }
 
-/* line 41, sass/partials/_metro.scss */
+/* line 42, sass/partials/_metro.scss */
 #secondary h2 {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 160%;
 }
-/* line 48, sass/partials/_metro.scss */
+/* line 49, sass/partials/_metro.scss */
 #secondary section.widget form {
   margin-top: 2.0em;
 }
-/* line 51, sass/partials/_metro.scss */
+/* line 52, sass/partials/_metro.scss */
 #secondary section.widget form label span {
   color: #fff;
   background: #00795D;
@@ -1087,36 +1089,36 @@ a {
   display: block;
   font-size: 160%;
 }
-/* line 60, sass/partials/_metro.scss */
+/* line 61, sass/partials/_metro.scss */
 #secondary section.widget form button {
   background-color: #00795c;
 }
-/* line 66, sass/partials/_metro.scss */
+/* line 67, sass/partials/_metro.scss */
 #secondary section.widget h2.widget-title {
   color: #fff;
   background: #00795D;
   padding: 4px 10px;
   margin: 1.0em 0;
 }
-/* line 74, sass/partials/_metro.scss */
+/* line 75, sass/partials/_metro.scss */
 #secondary #employee {
   margin-top: 4.0em;
   border-top: 1px solid rgba(0, 121, 92, 0.8);
   padding: 2.0em 0;
 }
-/* line 78, sass/partials/_metro.scss */
+/* line 79, sass/partials/_metro.scss */
 #secondary #employee img {
   margin: 0 auto;
   max-width: 160px;
   display: block;
 }
-/* line 83, sass/partials/_metro.scss */
+/* line 84, sass/partials/_metro.scss */
 #secondary #employee p.pledge_text {
   text-align: center;
   font-weight: 600;
 }
 
-/* line 90, sass/partials/_metro.scss */
+/* line 91, sass/partials/_metro.scss */
 h2.screen-reader-text {
   display: none;
 }

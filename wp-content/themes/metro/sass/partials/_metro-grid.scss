@@ -20,5 +20,6 @@ div.container{
   @include media ($tablet) {
     @include span-columns(12);
     margin-bottom: 2.0em;
+    margin-left:0em;
   }
 }
