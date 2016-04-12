@@ -18,6 +18,11 @@
 	add_filter('show_admin_bar', '__return_false');
 
 
+/*  Add support for thumbnails
+/* ------------------------------------ */
+    add_theme_support( 'post-thumbnails' ); 
+
+
 /*  Remove the ... from excerpt and change the text
 /* ------------------------------------ */
 function change_excerpt_more()
@@ -25,7 +30,7 @@ function change_excerpt_more()
   function new_excerpt_more($more)
     {
     // Use .read-more to style the link
-      return '<br /><span class="continue-reading"> <a href="' . get_permalink() . '"> Read More &#10142;</a></span>';
+      return '<br /><span class="continue-reading"> <a href="' . get_permalink() . '"> Continue Reading &#10142;</a></span>';
     }
   add_filter('excerpt_more', 'new_excerpt_more');
 }

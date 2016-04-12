@@ -46,7 +46,15 @@ a{
 	    font-size: 160%;
 	}
 	section.widget{
-		form{
+		ul{
+        li{
+          border-bottom: 1px solid #00795D;
+          border-right: 1px solid #00795D;
+          border-left: 1px solid #00795D;
+          padding:4px;
+        }
+      }
+    form{
 			margin-top: 2.0em;
 			label{
 				span{
@@ -68,7 +76,7 @@ a{
 			color: #fff;
 	    background: #00795D;
 	    padding: 4px 10px;
-	    margin: 1.0em 0;
+	    margin: 1.0em 0 0;
 		}
 	}
 

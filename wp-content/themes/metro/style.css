@@ -328,7 +328,7 @@ picture {
 
 /* line 1, sass/partials/_navigation2.scss */
 header.navigation {
-  background-color: rgba(34, 34, 34, 0.8);
+  background-color: rgba(34, 34, 34, 0.7);
   min-height: 60px;
   width: 100%;
   z-index: 999;
@@ -363,7 +363,7 @@ header.navigation .navigation-wrapper::after {
 }
 /* line 40, sass/partials/_navigation2.scss */
 header.navigation .navigation-container {
-  background-color: rgba(34, 34, 34, 0.8);
+  background-color: rgba(34, 34, 34, 0.7);
   display: block;
   position: relative;
 }
@@ -646,7 +646,7 @@ header.navigation ul.sub-menu li {
 }
 /* line 298, sass/partials/_navigation2.scss */
 header.navigation ul.sub-menu li a {
-  background-color: rgba(26, 26, 26, 0.8);
+  background-color: rgba(26, 26, 26, 0.7);
   display: inline-block;
   text-align: center;
   width: 100%;
@@ -654,7 +654,7 @@ header.navigation ul.sub-menu li a {
 @media screen and (min-width: 1100px) {
   /* line 298, sass/partials/_navigation2.scss */
   header.navigation ul.sub-menu li a {
-    background-color: rgba(34, 34, 34, 0.8);
+    background-color: rgba(34, 34, 34, 0.7);
     padding-left: 1em;
     text-align: left;
     width: 12em;
@@ -687,8 +687,8 @@ header.navigation .search-bar form {
 }
 /* line 343, sass/partials/_navigation2.scss */
 header.navigation .search-bar form input[type=search] {
-  background: rgba(47, 47, 47, 0.8);
-  border: 1px solid rgba(21, 21, 21, 0.8);
+  background: rgba(47, 47, 47, 0.7);
+  border: 1px solid rgba(21, 21, 21, 0.7);
   border-radius: 6px;
   box-sizing: border-box;
   color: white;
@@ -706,7 +706,7 @@ header.navigation .search-bar form input[type=search] {
 }
 /* line 360, sass/partials/_navigation2.scss */
 header.navigation .search-bar form button[type=submit] {
-  background: rgba(47, 47, 47, 0.8);
+  background: rgba(47, 47, 47, 0.7);
   border: none;
   bottom: 0.3em;
   left: auto;
@@ -1117,11 +1117,18 @@ a {
   font-weight: 600;
   font-size: 160%;
 }
-/* line 49, sass/partials/_metro.scss */
+/* line 50, sass/partials/_metro.scss */
+#secondary section.widget ul li {
+  border-bottom: 1px solid #00795D;
+  border-right: 1px solid #00795D;
+  border-left: 1px solid #00795D;
+  padding: 4px;
+}
+/* line 57, sass/partials/_metro.scss */
 #secondary section.widget form {
   margin-top: 2.0em;
 }
-/* line 52, sass/partials/_metro.scss */
+/* line 60, sass/partials/_metro.scss */
 #secondary section.widget form label span {
   color: #fff;
   background: #00795D;
@@ -1130,36 +1137,36 @@ a {
   display: block;
   font-size: 160%;
 }
-/* line 61, sass/partials/_metro.scss */
+/* line 69, sass/partials/_metro.scss */
 #secondary section.widget form button {
   background-color: #00795c;
 }
-/* line 67, sass/partials/_metro.scss */
+/* line 75, sass/partials/_metro.scss */
 #secondary section.widget h2.widget-title {
   color: #fff;
   background: #00795D;
   padding: 4px 10px;
-  margin: 1.0em 0;
+  margin: 1.0em 0 0;
 }
-/* line 75, sass/partials/_metro.scss */
+/* line 83, sass/partials/_metro.scss */
 #secondary #employee {
   margin-top: 4.0em;
   border-top: 1px solid rgba(0, 121, 92, 0.8);
   padding: 2.0em 0;
 }
-/* line 79, sass/partials/_metro.scss */
+/* line 87, sass/partials/_metro.scss */
 #secondary #employee img {
   margin: 0 auto;
   max-width: 160px;
   display: block;
 }
-/* line 84, sass/partials/_metro.scss */
+/* line 92, sass/partials/_metro.scss */
 #secondary #employee p.pledge_text {
   text-align: center;
   font-weight: 600;
 }
 
-/* line 91, sass/partials/_metro.scss */
+/* line 99, sass/partials/_metro.scss */
 h2.screen-reader-text {
   display: none;
 }

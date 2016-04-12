@@ -18,12 +18,14 @@ get_header(); ?>
 
 				<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 				<div class="entry-content">
-				
+					<?php if ( has_post_thumbnail() ) {
+						the_post_thumbnail();
+					} ?>
 					<?php the_excerpt(); ?>
 				</div>
 				<footer class="entry-footer">
-					<span class="cat-links">Posted in&nbsp;<?php the_category(); ?></span>
-					<span class="tagged-links"><?php the_tags('Tagged '); ?></span>
+					<span class="cat-links">Posted In:&nbsp;<?php the_category(); ?></span>
+					<span class="tagged-links"><?php the_tags('Tags: '); ?></span>
 				</footer>
 			<?php endwhile; ?>
 

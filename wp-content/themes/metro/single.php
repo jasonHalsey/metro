@@ -15,10 +15,11 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
-				<h1 class="entry-title single-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+				<?php if ( has_post_thumbnail() ) {
+						the_post_thumbnail();
+					} ?>
+				<h1 class="entry-title single-title"><?php the_title(); ?></h1>
 				<div class="entry-content">
-				
 					<?php the_content(); ?>
 				</div>
 				<footer class="entry-footer">
