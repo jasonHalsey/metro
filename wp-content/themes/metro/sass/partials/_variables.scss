@@ -8,3 +8,7 @@ $dropscreen: new-breakpoint(max-width 1099px);
 $tablet: new-breakpoint(max-width 860px);
 $mobile: new-breakpoint(max-width 767px);
 $phone: new-breakpoint(max-width 468px);
+
+//Fonts
+$primaryFont : lato, pt-sans, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+ 

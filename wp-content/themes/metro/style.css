@@ -328,20 +328,20 @@ picture {
 
 /* line 1, sass/partials/_navigation2.scss */
 header.navigation {
-  background-color: rgba(34, 34, 34, 0.65);
-  border-bottom: 1px solid rgba(9, 9, 9, 0.65);
+  background-color: rgba(34, 34, 34, 0.8);
   min-height: 60px;
   width: 100%;
   z-index: 999;
   position: fixed;
 }
-/* line 30, sass/partials/_navigation2.scss */
+/* line 29, sass/partials/_navigation2.scss */
 header.navigation .navigation-wrapper {
-  max-width: 75em;
+  max-width: 91.5625em;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   z-index: 9999;
+  height: 74px;
 }
 /* line 20, sass/bourbon/addons/_clearfix.scss */
 header.navigation .navigation-wrapper::after {
@@ -355,34 +355,64 @@ header.navigation .navigation-wrapper::after {
   content: "";
   display: table;
 }
-/* line 37, sass/partials/_navigation2.scss */
+@media screen and (min-width: 1100px) {
+  /* line 29, sass/partials/_navigation2.scss */
+  header.navigation .navigation-wrapper {
+    height: 158px;
+  }
+}
+/* line 40, sass/partials/_navigation2.scss */
 header.navigation .navigation-container {
-  background-color: rgba(34, 34, 34, 0.65);
+  background-color: rgba(34, 34, 34, 0.8);
   display: block;
   position: relative;
 }
-/* line 43, sass/partials/_navigation2.scss */
+/* line 46, sass/partials/_navigation2.scss */
 header.navigation .action-bar {
   z-index: 999;
   width: 100%;
-  height: 50px;
+  height: 0px;
   position: relative;
-  background-color: rgba(34, 34, 34, 0.65);
+  background-color: rgba(0, 125, 96, 0.5);
 }
-/* line 51, sass/partials/_navigation2.scss */
+@media screen and (min-width: 1100px) {
+  /* line 46, sass/partials/_navigation2.scss */
+  header.navigation .action-bar {
+    height: 55px;
+  }
+}
+/* line 57, sass/partials/_navigation2.scss */
 header.navigation .logo {
   float: left;
   height: 100%;
   padding-left: 1em;
   padding-right: 2em;
 }
-/* line 57, sass/partials/_navigation2.scss */
+/* line 62, sass/partials/_navigation2.scss */
 header.navigation .logo img {
-  display: block;
-  height: 100%;
-  padding: 0;
+  height: 63px;
+  position: absolute;
+  top: 5px;
+  left: 25px;
 }
-/* line 67, sass/partials/_navigation2.scss */
+@media screen and (min-width: 1100px) {
+  /* line 62, sass/partials/_navigation2.scss */
+  header.navigation .logo img {
+    transform: translateY(-50%);
+    top: 50%;
+    max-height: 100%;
+    height: 100%;
+    left: 0;
+  }
+}
+/* line 78, sass/partials/_navigation2.scss */
+header.navigation span.bars span {
+  border-bottom: 3px solid #fff;
+  display: block;
+  margin: 4px 0;
+  width: 18px;
+}
+/* line 88, sass/partials/_navigation2.scss */
 header.navigation .navigation-menu-button {
   color: white;
   display: block;
@@ -392,18 +422,22 @@ header.navigation .navigation-menu-button {
   padding-right: 1em;
   text-decoration: none;
   text-transform: uppercase;
+  position: absolute;
+  right: 10px;
+  top: 31%;
+  width: 51px;
 }
 @media screen and (min-width: 1100px) {
-  /* line 67, sass/partials/_navigation2.scss */
+  /* line 88, sass/partials/_navigation2.scss */
   header.navigation .navigation-menu-button {
     display: none;
   }
 }
-/* line 80, sass/partials/_navigation2.scss */
+/* line 104, sass/partials/_navigation2.scss */
 header.navigation .navigation-menu-button:focus, header.navigation .navigation-menu-button:hover {
   color: white;
 }
-/* line 88, sass/partials/_navigation2.scss */
+/* line 112, sass/partials/_navigation2.scss */
 header.navigation nav {
   z-index: 9999999;
   float: none;
@@ -412,13 +446,13 @@ header.navigation nav {
   overflow-y: visible;
 }
 @media screen and (min-width: 1100px) {
-  /* line 88, sass/partials/_navigation2.scss */
+  /* line 112, sass/partials/_navigation2.scss */
   header.navigation nav {
     float: right;
     width: 75%;
   }
 }
-/* line 101, sass/partials/_navigation2.scss */
+/* line 125, sass/partials/_navigation2.scss */
 header.navigation ul.navigation-menu {
   clear: both;
   display: none;
@@ -427,20 +461,22 @@ header.navigation ul.navigation-menu {
   padding: 0;
   width: 100%;
   z-index: 9999;
+  font-family: lato, pt-sans, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
-/* line 110, sass/partials/_navigation2.scss */
+/* line 134, sass/partials/_navigation2.scss */
 header.navigation ul.navigation-menu.show {
   display: block;
 }
 @media screen and (min-width: 1100px) {
-  /* line 101, sass/partials/_navigation2.scss */
+  /* line 125, sass/partials/_navigation2.scss */
   header.navigation ul.navigation-menu {
-    display: inline;
     margin: 0;
-    padding: 0;
+    padding: 1.0em 1.0em 0 0;
+    display: flex;
+    justify-content: space-between;
   }
 }
-/* line 123, sass/partials/_navigation2.scss */
+/* line 148, sass/partials/_navigation2.scss */
 header.navigation ul li.nav-link {
   display: block;
   line-height: 60px;
@@ -448,71 +484,76 @@ header.navigation ul li.nav-link {
   text-align: center;
   width: 100%;
   z-index: 9999;
+  background-color: rgba(34, 34, 34, 0.8);
+  border-bottom: 1px solid #666;
 }
 @media screen and (min-width: 1100px) {
-  /* line 123, sass/partials/_navigation2.scss */
+  /* line 148, sass/partials/_navigation2.scss */
   header.navigation ul li.nav-link {
     background: transparent;
     display: inline;
     line-height: 60px;
     text-decoration: none;
-    padding-right: 0.8em;
+    border-bottom: none;
     width: auto;
     text-align: right;
+    vertical-align: bottom;
   }
 }
-/* line 142, sass/partials/_navigation2.scss */
+/* line 170, sass/partials/_navigation2.scss */
 header.navigation ul li.nav-link a {
   color: white;
   display: inline-block;
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 23px;
   text-transform: capitalize;
 }
 @media screen and (min-width: 1100px) {
-  /* line 142, sass/partials/_navigation2.scss */
+  /* line 170, sass/partials/_navigation2.scss */
   header.navigation ul li.nav-link a {
-    padding-right: 1em;
+    padding-bottom: 1.75em;
+    border-bottom: 10px solid transparent;
   }
 }
-/* line 153, sass/partials/_navigation2.scss */
+/* line 182, sass/partials/_navigation2.scss */
 header.navigation ul li.nav-link a:focus, header.navigation ul li.nav-link a:hover {
-  color: white;
+  color: #007d60;
+  border-bottom-color: #007d60 !important;
 }
-/* line 160, sass/partials/_navigation2.scss */
+/* line 190, sass/partials/_navigation2.scss */
 header.navigation .active-nav-item a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   padding-bottom: 3px;
 }
-/* line 167, sass/partials/_navigation2.scss */
+/* line 197, sass/partials/_navigation2.scss */
 header.navigation li.more.nav-link {
   padding-right: 0;
 }
 @media screen and (min-width: 1100px) {
-  /* line 167, sass/partials/_navigation2.scss */
+  /* line 197, sass/partials/_navigation2.scss */
   header.navigation li.more.nav-link {
     padding-right: 1em;
   }
 }
-/* line 174, sass/partials/_navigation2.scss */
+/* line 204, sass/partials/_navigation2.scss */
 header.navigation li.more.nav-link > ul > li:first-child a {
   padding-top: 0em;
 }
 @media screen and (min-width: 1100px) {
-  /* line 174, sass/partials/_navigation2.scss */
+  /* line 204, sass/partials/_navigation2.scss */
   header.navigation li.more.nav-link > ul > li:first-child a {
     padding-top: 1em;
   }
 }
-/* line 181, sass/partials/_navigation2.scss */
+/* line 211, sass/partials/_navigation2.scss */
 header.navigation li.more.nav-link a {
   margin-right: 1em;
 }
-/* line 185, sass/partials/_navigation2.scss */
+/* line 215, sass/partials/_navigation2.scss */
 header.navigation li.more.nav-link > a {
   padding-right: 0.6em;
 }
-/* line 189, sass/partials/_navigation2.scss */
+/* line 219, sass/partials/_navigation2.scss */
 header.navigation li.more.nav-link > a:after {
   transform: rotate(90deg);
   content: '\203A';
@@ -523,51 +564,51 @@ header.navigation li.more.nav-link > a:after {
   left: auto;
   color: white;
 }
-/* line 197, sass/partials/_navigation2.scss */
+/* line 227, sass/partials/_navigation2.scss */
 header.navigation li.more {
   overflow: visible;
   padding-right: 0;
 }
-/* line 201, sass/partials/_navigation2.scss */
+/* line 231, sass/partials/_navigation2.scss */
 header.navigation li.more a {
   padding-right: 0.8em;
 }
-/* line 205, sass/partials/_navigation2.scss */
+/* line 235, sass/partials/_navigation2.scss */
 header.navigation li.more > a {
   padding-right: 1.6em;
   position: relative;
 }
 @media screen and (min-width: 1100px) {
-  /* line 205, sass/partials/_navigation2.scss */
+  /* line 235, sass/partials/_navigation2.scss */
   header.navigation li.more > a {
     margin-right: 1em;
   }
 }
-/* line 213, sass/partials/_navigation2.scss */
+/* line 243, sass/partials/_navigation2.scss */
 header.navigation li.more > a:after {
   content: '›';
   font-size: 1.2em;
   position: absolute;
   right: 0.5em;
 }
-/* line 221, sass/partials/_navigation2.scss */
+/* line 251, sass/partials/_navigation2.scss */
 header.navigation li.more:focus > .sub-menu, header.navigation li.more:hover > .sub-menu {
   display: block;
 }
 @media screen and (min-width: 1100px) {
-  /* line 197, sass/partials/_navigation2.scss */
+  /* line 227, sass/partials/_navigation2.scss */
   header.navigation li.more {
     padding-right: 0.8em;
     position: relative;
   }
 }
-/* line 232, sass/partials/_navigation2.scss */
+/* line 262, sass/partials/_navigation2.scss */
 header.navigation ul.sub-menu {
   display: none;
   padding-left: 0;
 }
 @media screen and (min-width: 1100px) {
-  /* line 232, sass/partials/_navigation2.scss */
+  /* line 262, sass/partials/_navigation2.scss */
   header.navigation ul.sub-menu {
     left: -1em;
     position: absolute;
@@ -575,51 +616,51 @@ header.navigation ul.sub-menu {
   }
 }
 @media screen and (min-width: 1100px) {
-  /* line 242, sass/partials/_navigation2.scss */
+  /* line 272, sass/partials/_navigation2.scss */
   header.navigation ul.sub-menu .sub-menu {
     left: 11.8em;
     top: 0;
   }
 }
-/* line 249, sass/partials/_navigation2.scss */
+/* line 279, sass/partials/_navigation2.scss */
 header.navigation ul.sub-menu li {
   display: block;
   padding-right: 0;
 }
 @media screen and (min-width: 1100px) {
-  /* line 249, sass/partials/_navigation2.scss */
+  /* line 279, sass/partials/_navigation2.scss */
   header.navigation ul.sub-menu li {
     line-height: 46.15385px;
   }
-  /* line 256, sass/partials/_navigation2.scss */
+  /* line 286, sass/partials/_navigation2.scss */
   header.navigation ul.sub-menu li:first-child > a {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
   }
-  /* line 261, sass/partials/_navigation2.scss */
+  /* line 291, sass/partials/_navigation2.scss */
   header.navigation ul.sub-menu li:last-child > a {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     padding-bottom: 0.7em;
   }
 }
-/* line 268, sass/partials/_navigation2.scss */
+/* line 298, sass/partials/_navigation2.scss */
 header.navigation ul.sub-menu li a {
-  background-color: rgba(26, 26, 26, 0.65);
+  background-color: rgba(26, 26, 26, 0.8);
   display: inline-block;
   text-align: center;
   width: 100%;
 }
 @media screen and (min-width: 1100px) {
-  /* line 268, sass/partials/_navigation2.scss */
+  /* line 298, sass/partials/_navigation2.scss */
   header.navigation ul.sub-menu li a {
-    background-color: rgba(34, 34, 34, 0.65);
+    background-color: rgba(34, 34, 34, 0.8);
     padding-left: 1em;
     text-align: left;
     width: 12em;
   }
 }
-/* line 286, sass/partials/_navigation2.scss */
+/* line 316, sass/partials/_navigation2.scss */
 header.navigation .navigation-tools {
   background: #505050;
   clear: both;
@@ -627,27 +668,27 @@ header.navigation .navigation-tools {
   height: 60px;
 }
 @media screen and (min-width: 1100px) {
-  /* line 286, sass/partials/_navigation2.scss */
+  /* line 316, sass/partials/_navigation2.scss */
   header.navigation .navigation-tools {
     background: transparent;
     clear: none;
     float: right;
   }
 }
-/* line 301, sass/partials/_navigation2.scss */
+/* line 331, sass/partials/_navigation2.scss */
 header.navigation .search-bar {
   float: left;
   padding: 0.85em 0.85em 0.7em 0.6em;
   width: 60%;
 }
-/* line 310, sass/partials/_navigation2.scss */
+/* line 340, sass/partials/_navigation2.scss */
 header.navigation .search-bar form {
   position: relative;
 }
-/* line 313, sass/partials/_navigation2.scss */
+/* line 343, sass/partials/_navigation2.scss */
 header.navigation .search-bar form input[type=search] {
-  background: rgba(47, 47, 47, 0.65);
-  border: 1px solid rgba(21, 21, 21, 0.65);
+  background: rgba(47, 47, 47, 0.8);
+  border: 1px solid rgba(21, 21, 21, 0.8);
   border-radius: 6px;
   box-sizing: border-box;
   color: white;
@@ -658,14 +699,14 @@ header.navigation .search-bar form input[type=search] {
   width: 100%;
 }
 @media screen and (min-width: 1100px) {
-  /* line 313, sass/partials/_navigation2.scss */
+  /* line 343, sass/partials/_navigation2.scss */
   header.navigation .search-bar form input[type=search] {
     width: 100%;
   }
 }
-/* line 330, sass/partials/_navigation2.scss */
+/* line 360, sass/partials/_navigation2.scss */
 header.navigation .search-bar form button[type=submit] {
-  background: rgba(47, 47, 47, 0.65);
+  background: rgba(47, 47, 47, 0.8);
   border: none;
   bottom: 0.3em;
   left: auto;
@@ -675,28 +716,28 @@ header.navigation .search-bar form button[type=submit] {
   right: 0.3em;
   top: 0.3em;
 }
-/* line 341, sass/partials/_navigation2.scss */
+/* line 371, sass/partials/_navigation2.scss */
 header.navigation .search-bar form button[type=submit] img {
   height: 12px;
   opacity: 0.7;
   padding: 1px;
 }
 @media screen and (min-width: 1100px) {
-  /* line 301, sass/partials/_navigation2.scss */
+  /* line 331, sass/partials/_navigation2.scss */
   header.navigation .search-bar {
     display: inline-block;
     position: relative;
     width: 16em;
   }
-  /* line 354, sass/partials/_navigation2.scss */
+  /* line 384, sass/partials/_navigation2.scss */
   header.navigation .search-bar input {
     box-sizing: border-box;
     display: block;
   }
 }
-/* line 361, sass/partials/_navigation2.scss */
+/* line 391, sass/partials/_navigation2.scss */
 header.navigation ul.btn-phone-wrapper {
-  max-width: 75em;
+  max-width: 91.5625em;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -708,7 +749,7 @@ header.navigation ul.btn-phone-wrapper::after {
   content: "";
   display: table;
 }
-/* line 367, sass/partials/_navigation2.scss */
+/* line 397, sass/partials/_navigation2.scss */
 header.navigation ul.btn-phone-wrapper:before {
   content: '';
   display: block;
@@ -720,14 +761,14 @@ header.navigation ul.btn-phone-wrapper:before {
   top: 0;
   z-index: -1;
 }
-/* line 378, sass/partials/_navigation2.scss */
+/* line 408, sass/partials/_navigation2.scss */
 header.navigation ul.btn-phone-wrapper li {
   float: right;
   text-transform: uppercase;
   color: #fff;
   font-size: 25px;
 }
-/* line 386, sass/partials/_navigation2.scss */
+/* line 416, sass/partials/_navigation2.scss */
 header.navigation ul.btn-phone-wrapper li.payonline-btn a {
   color: #000;
   padding: 0.25em 1.5em;
@@ -735,7 +776,7 @@ header.navigation ul.btn-phone-wrapper li.payonline-btn a {
   display: block;
   background-color: #FEE101;
 }
-/* line 394, sass/partials/_navigation2.scss */
+/* line 424, sass/partials/_navigation2.scss */
 header.navigation ul.btn-phone-wrapper li.number {
   padding-top: 0.25em;
   padding-right: 1.0em;
@@ -743,7 +784,7 @@ header.navigation ul.btn-phone-wrapper li.number {
 
 /* line 1, sass/partials/_metro-grid.scss */
 div.container {
-  max-width: 75em;
+  max-width: 91.5625em;
   margin-left: auto;
   margin-right: auto;
 }
