@@ -10,7 +10,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<?php custom_breadcrumbs(); ?>
+
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
@@ -19,9 +19,9 @@ get_header(); ?>
 						the_post_thumbnail();
 					} ?>
 				<h1 class="entry-title single-title"><?php the_title(); ?></h1>
-				<div class="entry-content">
+				<article class="entry-content">
 					<?php the_content(); ?>
-				</div>
+				</article>
 				<footer class="entry-footer">
 					<span class="cat-links">Posted in&nbsp;<?php the_category(); ?></span>
 					<span class="tagged-links"><?php the_tags('Tagged '); ?></span>
@@ -55,4 +55,5 @@ get_header(); ?>
 	<?php get_sidebar(); ?>
 
 </div><!-- #container -->
+
 <?php get_footer(); ?>

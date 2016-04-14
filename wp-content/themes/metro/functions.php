@@ -150,12 +150,26 @@ add_action('after_setup_theme', 'change_excerpt_more');
 	    <?php
 	}
 
+    function cta_url_element()
+    {
+        ?>
+            <input type="text" name="cta_url" id="cta_url" value="<?php echo get_option('cta_url'); ?>" />
+        <?php
+    }
+
+    function cta_text_element()
+    {
+        ?>
+            <input type="text" name="cta_text" id="cta_text" value="<?php echo get_option('cta_text'); ?>" />
+        <?php
+    }
+
 	function display_theme_panel_fields()
 	{
 		add_settings_section("section", "Metro Theme Settings", null, "theme-options");
 
 		add_settings_field("phone_number", "Location Phone Number", "display_phone_element", "theme-options", "section");
-    add_settings_field("logo_url", "Logo URL", "display_logo_element", "theme-options", "section");
+        add_settings_field("logo_url", "Logo URL", "display_logo_element", "theme-options", "section");
 
 		add_settings_field("paylink_url", "Pay Online Button Url", "display_paylink_element", "theme-options", "section");
 		add_settings_field("email_url", "Email Address", "display_email_element", "theme-options", "section");
@@ -164,6 +178,9 @@ add_action('after_setup_theme', 'change_excerpt_more');
 		add_settings_field("localstorage_url", "Find Local Storage URL", "localstorage_element", "theme-options", "section");
 		add_settings_field("twitter_url", "Twitter Footer Icon URL", "twitter_element", "theme-options", "section");
 		add_settings_field("facebook_url", "Facebook Footer Icon URL", "facebook_element", "theme-options", "section");
+        add_settings_field("cta_url", "CTA URL", "cta_url_element", "theme-options", "section");
+
+        add_settings_field("cta_text", "CTA Text", "cta_text_element", "theme-options", "section");
 
     register_setting("section", "logo_url");
     register_setting("section", "phone_number");
@@ -172,6 +189,8 @@ add_action('after_setup_theme', 'change_excerpt_more');
     register_setting("section", "privacy_url");
     register_setting("section", "twitter_url");
     register_setting("section", "facebook_url");
+    register_setting("section", "cta_text");
+    register_setting("section", "cta_url");
     
 	}
 

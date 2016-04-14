@@ -2,12 +2,19 @@ div.archive{
   background-color: #fff;
   @include clearfix;
   #primary{
+    @include span-columns(8);
     margin-right:0;
     background-color: #fff;
     border-right:0;
+    float:right;
+    @include media ($dropscreen) {
+      @include span-columns(12);
+      margin-bottom: 2.0em;
+      margin-left:0em;
+    }
     h1{
       color: #fff;
-      background: #00795D;
+      background: $primaryGreen;
       padding: 4px 10px;
       width: 100%;
       display: block;
@@ -19,6 +26,13 @@ div.archive{
     }
   }
   #secondary{
+    @include span-columns(4);
     background-color: #fff;
+    margin-right: 1.0%;
+    float:left;
+    @include media ($dropscreen) {
+      @include span-columns(12);
+      padding-left:0em;
+    }
   }
 }

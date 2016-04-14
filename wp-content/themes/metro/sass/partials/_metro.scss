@@ -17,6 +17,7 @@ a{
 	  -moz-transition:.5s;
 	  -webkit-transition:.5s;
 	  transition:.5s;
+    color: #000;
   	&:hover{
   		color: $primaryColor;
   		text-decoration: underline;
@@ -29,9 +30,20 @@ a{
 .entry-footer{
 	font-size: 12px;
 	.cat-links{
+    span{
+      display: inline-block;
+      vertical-align: top;
+    }
 		ul.post-categories{
 			display: inline-block;
-      width:100%;
+      // width:100%;
+      li{
+        float:left;
+        &:after{
+          content: ", ";
+          margin-right: 0.25em;
+        }
+      }
 		}
 	}
 	span.tagged-links{
@@ -48,18 +60,20 @@ a{
 	section.widget{
 		ul{
         li{
-          border-bottom: 1px solid #00795D;
-          border-right: 1px solid #00795D;
-          border-left: 1px solid #00795D;
+          border-bottom: 1px solid $primaryGreen;
+          border-right: 1px solid $primaryGreen;
+          border-left: 1px solid $primaryGreen;
           padding:4px;
         }
       }
     form{
-			margin-top: 2.0em;
+      input[type="text"]{
+        color:#bababa;
+      }
 			label{
 				span{
 					color: #fff;
-			    background: #00795D;
+			    background: $primaryGreen;
 			    padding: 2px 10px;
 			    width:100%;
 			    display:block;
@@ -67,14 +81,14 @@ a{
 				}
 			}
 			button{
-				background-color: $primaryColor;
+				background-color: $primaryGreen;
 			}
 		}
 			  
 		
 		h2.widget-title{
 			color: #fff;
-	    background: #00795D;
+	    background: $primaryGreen;
 	    padding: 4px 10px;
 	    margin: 1.0em 0 0;
 		}

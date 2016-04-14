@@ -24,7 +24,7 @@ get_header(); ?>
 					<?php the_excerpt(); ?>
 				</div>
 				<footer class="entry-footer">
-					<span class="cat-links">Posted In:&nbsp;<?php the_category(); ?></span>
+					<span class="cat-links"><span>Posted In:&nbsp;</span><?php the_category(); ?></span>
 					<span class="tagged-links"><?php the_tags('Tags: '); ?></span>
 				</footer>
 			<?php endwhile; ?>

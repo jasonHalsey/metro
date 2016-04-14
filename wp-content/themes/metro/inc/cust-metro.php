@@ -7,5 +7,6 @@
 	$GLOBALS['privacy_url'] = get_option('privacy_url');
 	$GLOBALS['twitter_url'] = get_option('twitter_url');
 	$GLOBALS['facebook_url'] = get_option('facebook_url');
-
+  $GLOBALS['cta_url'] = get_option('cta_url');
+  $GLOBALS['cta_text'] = get_option('cta_text');
 ?>
