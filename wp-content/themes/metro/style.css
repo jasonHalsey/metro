@@ -1018,7 +1018,8 @@ CORPORATE HOMEPAGE SEARCH
   width: 100%;
   background-color: #040d0a;
   border-top: 1px solid #2b7f68;
-  padding: 2em 0;
+  margin-top: 4.0em;
+  padding: 2em 0 4.0em;
   font-family: "lato", "pt-sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 /* line 20, sass/bourbon/addons/_clearfix.scss */
@@ -1027,35 +1028,35 @@ CORPORATE HOMEPAGE SEARCH
   content: "";
   display: table;
 }
-/* line 8, sass/partials/_footer.scss */
+/* line 9, sass/partials/_footer.scss */
 .site-footer .site-info {
   color: #e5e3e1;
   font-size: 1.25em;
   line-height: 1.25em;
 }
-/* line 12, sass/partials/_footer.scss */
+/* line 13, sass/partials/_footer.scss */
 .site-footer .site-info a {
   color: #e5e3e1;
 }
-/* line 14, sass/partials/_footer.scss */
+/* line 15, sass/partials/_footer.scss */
 .site-footer .site-info a:hover {
   color: #00795c;
 }
-/* line 18, sass/partials/_footer.scss */
+/* line 19, sass/partials/_footer.scss */
 .site-footer .site-info h4, .site-footer .site-info p {
   margin: 0 0 0.25em;
 }
-/* line 21, sass/partials/_footer.scss */
+/* line 22, sass/partials/_footer.scss */
 .site-footer .site-info div.leftContain {
   float: left;
   margin-left: 2.0em;
 }
-/* line 25, sass/partials/_footer.scss */
+/* line 26, sass/partials/_footer.scss */
 .site-footer .site-info div.RightContain {
   float: right;
   margin-right: 2.0em;
 }
-/* line 28, sass/partials/_footer.scss */
+/* line 29, sass/partials/_footer.scss */
 .site-footer .site-info div.RightContain span.nav {
   display: block;
   text-align: right;
