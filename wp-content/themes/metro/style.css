@@ -782,6 +782,16 @@ header.navigation ul.btn-phone-wrapper li.number {
   padding-right: 1.0em;
 }
 
+/* line 431, sass/partials/_navigation2.scss */
+nav.post-navigation {
+  margin: 2.0em 0;
+}
+
+/* line 435, sass/partials/_navigation2.scss */
+nav.pagination {
+  margin: 2.0em 0 1.0em;
+}
+
 /* line 1, sass/partials/_metro-grid.scss */
 div.container {
   max-width: 91.5625em;
@@ -1016,10 +1026,10 @@ CORPORATE HOMEPAGE SEARCH
 /* line 1, sass/partials/_footer.scss */
 .site-footer {
   width: 100%;
-  background-color: #040d0a;
+  background-color: #031410;
   border-top: 1px solid #2b7f68;
   margin-top: 4.0em;
-  padding: 2em 0 4.0em;
+  padding: 2em 0 12.0em;
   font-family: "lato", "pt-sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 /* line 20, sass/bourbon/addons/_clearfix.scss */
@@ -1061,6 +1071,49 @@ CORPORATE HOMEPAGE SEARCH
   display: block;
   text-align: right;
   margin: 0 0 0.35em;
+}
+/* line 34, sass/partials/_footer.scss */
+.site-footer .site-info div.RightContain .access {
+  background: url(https://themes.g5dxm.com/shared/access-icons-light.png) 0 0 no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  margin-left: 10px;
+  vertical-align: top;
+  position: absolute;
+  right: 2.0em;
+  margin-top: 1.0em;
+}
+/* line 46, sass/partials/_footer.scss */
+.site-footer .site-info div.RightContain .handicap-icon {
+  background-position: -43px 0;
+  height: 23px;
+  width: 20px;
+}
+/* line 51, sass/partials/_footer.scss */
+.site-footer .site-info div.RightContain .social-links {
+  margin-bottom: .5em;
+  text-align: right;
+  padding: 15px 15px 0 15px;
+}
+/* line 55, sass/partials/_footer.scss */
+.site-footer .site-info div.RightContain .social-links a {
+  margin: 0 15px 15px 0;
+  display: inline-block;
+}
+/* line 59, sass/partials/_footer.scss */
+.site-footer .site-info div.RightContain .social-links .housing-icon {
+  line-height: 1.5em;
+}
+/* line 62, sass/partials/_footer.scss */
+.site-footer .site-info div.RightContain .social-links .icon {
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+  background-color: #007d60;
+  height: 55px;
+  width: 55px;
 }
 
 /* line 1, sass/partials/_metro.scss */

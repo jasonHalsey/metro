@@ -1,9 +1,9 @@
 .site-footer{
 	width: 100%;
-	background-color: #040d0a;
+	background-color: #031410;
   border-top: 1px solid #2b7f68;
   margin-top: 4.0em;
-  padding: 2em 0 4.0em;
+  padding: 2em 0 12.0em;
 	font-family: "lato", "pt-sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	@include clearfix;
 	.site-info{
@@ -30,6 +30,43 @@
 				display: block;
 				text-align: right;
 				margin: 0 0 0.35em;
+			}
+			.access{
+				background: url(https://themes.g5dxm.com/shared/access-icons-light.png) 0 0 no-repeat;
+		    text-indent: 100%;
+		    white-space: nowrap;
+		    overflow: hidden;
+		    display: block;
+		    margin-left: 10px;
+		    vertical-align: top;
+		    position: absolute;
+		    right:2.0em;
+		    margin-top: 1.0em;
+			}
+			.handicap-icon {
+			  background-position: -43px 0;
+			  height: 23px;
+			  width: 20px;
+			}
+			.social-links{
+				margin-bottom: .5em;
+				text-align: right;
+				padding: 15px 15px 0 15px;
+				a{
+					margin: 0 15px 15px 0;
+					display: inline-block;
+				}
+				.housing-icon{
+					line-height: 1.5em;
+				}
+				.icon{
+					-webkit-transition: background-color 0.2s ease;
+			    -moz-transition: background-color 0.2s ease;
+			    transition: background-color 0.2s ease;
+			    background-color: #007d60;
+			    height: 55px;
+			    width: 55px;
+				}
 			}
 		}
 	}
