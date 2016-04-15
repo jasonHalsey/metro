@@ -5,7 +5,7 @@ header.navigation {
   $dark-gray: #333 !default;
   // $large-screen: em(1000) !default;
   $navigation-padding: 1em;
-  $navigation-background: rgba(34,34,34,0.70);
+  $navigation-background: rgba(34,34,34,0.85);
   $navigation-color: white;
   $navigation-color-hover: white;
   $navigation-height: 60px;
@@ -64,6 +64,7 @@ header.navigation {
       position: absolute;
       top: 5px;
       left: 25px;
+      width:auto;
       @include media ($horizontal-bar-mode) {
         transform: translateY(-50%);
         top: 50%;
@@ -159,19 +160,20 @@ header.navigation {
     @include media ($horizontal-bar-mode) {
       background: transparent;
       display: inline;
-      line-height: $navigation-height;
+      line-height: 52px;
       text-decoration: none;
       border-bottom: none;
       width: auto;
       text-align: right;
       vertical-align: bottom;
+      margin-top: 10px;
     }
 
     a {
       color: $navigation-color;
       display: inline-block;
       text-decoration: none;
-      font-size: 23px;
+      font-size: 22px;
       text-transform: capitalize;
       @include media ($horizontal-bar-mode) {
         // padding-right: 1em;

@@ -22,6 +22,7 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/g5-orion-clients/g5-c-iaie118k-metro-self-storage-client/g5-cl-iaie11vd-metro-self-storage/uploads/metro-self-storage-favicon.png">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
   <!--[if lt IE 9]>
   <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
   <![endif]-->
