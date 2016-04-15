@@ -5,6 +5,12 @@ h2, h3{
   font-weight: 600;
   color:#000;
 }
+.entry-content{
+  img{
+    max-width:100%;
+    height:auto;
+  }
+}
 .entry-title{
 	padding: 10px 0;
   line-height: 30px;
