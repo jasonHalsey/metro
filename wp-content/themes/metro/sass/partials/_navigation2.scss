@@ -33,12 +33,12 @@ header.navigation {
     z-index: 9999;
     height:74px;
     @include media ($horizontal-bar-mode) {
-      height:158px;
+      height:127px;
     }
   }
 
   .navigation-container{
-    background-color: $navigation-background;
+    // background-color: $navigation-background;
     display: block;
     position: relative;
   }
@@ -50,7 +50,7 @@ header.navigation {
     position: relative;
     background-color: rgba(0,125,96,0.5);
     @include media ($horizontal-bar-mode) {
-      height:55px;
+      height:45px;
     }
   }
 
@@ -160,20 +160,20 @@ header.navigation {
     @include media ($horizontal-bar-mode) {
       background: transparent;
       display: inline;
-      line-height: 52px;
+      line-height: 38px;
       text-decoration: none;
       border-bottom: none;
       width: auto;
       text-align: right;
       vertical-align: bottom;
-      margin-top: 10px;
+      // margin-top: 10px;
     }
 
     a {
       color: $navigation-color;
       display: inline-block;
       text-decoration: none;
-      font-size: 22px;
+      font-size: 18px;
       text-transform: capitalize;
       @include media ($horizontal-bar-mode) {
         // padding-right: 1em;

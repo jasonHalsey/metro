@@ -358,12 +358,11 @@ header.navigation .navigation-wrapper::after {
 @media screen and (min-width: 1100px) {
   /* line 29, sass/partials/_navigation2.scss */
   header.navigation .navigation-wrapper {
-    height: 158px;
+    height: 127px;
   }
 }
 /* line 40, sass/partials/_navigation2.scss */
 header.navigation .navigation-container {
-  background-color: rgba(34, 34, 34, 0.85);
   display: block;
   position: relative;
 }
@@ -378,7 +377,7 @@ header.navigation .action-bar {
 @media screen and (min-width: 1100px) {
   /* line 46, sass/partials/_navigation2.scss */
   header.navigation .action-bar {
-    height: 55px;
+    height: 45px;
   }
 }
 /* line 57, sass/partials/_navigation2.scss */
@@ -493,13 +492,12 @@ header.navigation ul li.nav-link {
   header.navigation ul li.nav-link {
     background: transparent;
     display: inline;
-    line-height: 52px;
+    line-height: 38px;
     text-decoration: none;
     border-bottom: none;
     width: auto;
     text-align: right;
     vertical-align: bottom;
-    margin-top: 10px;
   }
 }
 /* line 172, sass/partials/_navigation2.scss */
@@ -507,7 +505,7 @@ header.navigation ul li.nav-link a {
   color: white;
   display: inline-block;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   text-transform: capitalize;
 }
 @media screen and (min-width: 1100px) {
