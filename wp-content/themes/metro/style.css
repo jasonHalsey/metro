@@ -1030,7 +1030,7 @@ CORPORATE HOMEPAGE SEARCH
   border-top: 1px solid #2b7f68;
   margin-top: 4.0em;
   padding: 2em 0 12.0em;
-  font-family: "lato", "pt-sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Lato", pt-sans, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 /* line 20, sass/bourbon/addons/_clearfix.scss */
 .site-footer::after {
@@ -1041,7 +1041,7 @@ CORPORATE HOMEPAGE SEARCH
 /* line 9, sass/partials/_footer.scss */
 .site-footer .site-info {
   color: #e5e3e1;
-  font-size: 1.25em;
+  font-size: 1.0em;
   line-height: 1.25em;
 }
 /* line 13, sass/partials/_footer.scss */
@@ -1112,8 +1112,8 @@ CORPORATE HOMEPAGE SEARCH
   -moz-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
   background-color: #007d60;
-  height: 55px;
-  width: 55px;
+  height: 45px;
+  width: 45px;
 }
 
 /* line 1, sass/partials/_metro.scss */

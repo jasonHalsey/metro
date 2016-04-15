@@ -4,11 +4,11 @@
   border-top: 1px solid #2b7f68;
   margin-top: 4.0em;
   padding: 2em 0 12.0em;
-	font-family: "lato", "pt-sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-family: $primaryFont;
 	@include clearfix;
 	.site-info{
 		color:#e5e3e1;
-		font-size: 1.25em;
+		font-size: 1.0em;
 		line-height: 1.25em;
 		a{
 			color:#e5e3e1;
@@ -64,8 +64,8 @@
 			    -moz-transition: background-color 0.2s ease;
 			    transition: background-color 0.2s ease;
 			    background-color: #007d60;
-			    height: 55px;
-			    width: 55px;
+			    height: 45px;
+			    width: 45px;
 				}
 			}
 		}
