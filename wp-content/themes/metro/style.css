@@ -1122,6 +1122,12 @@ a {
 }
 
 /* line 4, sass/partials/_metro.scss */
+h2, h3 {
+  font-weight: 600;
+  color: #000;
+}
+
+/* line 8, sass/partials/_metro.scss */
 .entry-title {
   padding: 10px 0;
   line-height: 30px;
@@ -1129,11 +1135,11 @@ a {
   margin-top: 1.5em;
   margin-bottom: 0.25em;
 }
-/* line 10, sass/partials/_metro.scss */
+/* line 14, sass/partials/_metro.scss */
 .entry-title:first-child {
   margin-top: 0.25em;
 }
-/* line 13, sass/partials/_metro.scss */
+/* line 17, sass/partials/_metro.scss */
 .entry-title a {
   text-decoration: none;
   -o-transition: .5s;
@@ -1143,63 +1149,63 @@ a {
   transition: .5s;
   color: #000;
 }
-/* line 21, sass/partials/_metro.scss */
+/* line 25, sass/partials/_metro.scss */
 .entry-title a:hover {
   color: #00795c;
   text-decoration: underline;
 }
 
-/* line 27, sass/partials/_metro.scss */
+/* line 31, sass/partials/_metro.scss */
 .single-title {
   margin-top: 0em !important;
 }
 
-/* line 30, sass/partials/_metro.scss */
+/* line 34, sass/partials/_metro.scss */
 .entry-footer {
   font-size: 12px;
 }
-/* line 33, sass/partials/_metro.scss */
+/* line 37, sass/partials/_metro.scss */
 .entry-footer .cat-links span {
   display: inline-block;
   vertical-align: top;
 }
-/* line 37, sass/partials/_metro.scss */
+/* line 41, sass/partials/_metro.scss */
 .entry-footer .cat-links ul.post-categories {
   display: inline-block;
 }
-/* line 40, sass/partials/_metro.scss */
+/* line 44, sass/partials/_metro.scss */
 .entry-footer .cat-links ul.post-categories li {
   float: left;
 }
-/* line 42, sass/partials/_metro.scss */
+/* line 46, sass/partials/_metro.scss */
 .entry-footer .cat-links ul.post-categories li:after {
   content: ", ";
   margin-right: 0.25em;
 }
-/* line 49, sass/partials/_metro.scss */
+/* line 53, sass/partials/_metro.scss */
 .entry-footer span.tagged-links {
   display: block;
 }
 
-/* line 54, sass/partials/_metro.scss */
+/* line 58, sass/partials/_metro.scss */
 #secondary h2 {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 160%;
 }
-/* line 62, sass/partials/_metro.scss */
+/* line 66, sass/partials/_metro.scss */
 #secondary section.widget ul li {
   border-bottom: 1px solid #007d60;
   border-right: 1px solid #007d60;
   border-left: 1px solid #007d60;
   padding: 4px;
 }
-/* line 70, sass/partials/_metro.scss */
+/* line 74, sass/partials/_metro.scss */
 #secondary section.widget form input[type="text"] {
   color: #bababa;
 }
-/* line 74, sass/partials/_metro.scss */
+/* line 78, sass/partials/_metro.scss */
 #secondary section.widget form label span {
   color: #fff;
   background: #007d60;
@@ -1208,36 +1214,36 @@ a {
   display: block;
   font-size: 160%;
 }
-/* line 83, sass/partials/_metro.scss */
+/* line 87, sass/partials/_metro.scss */
 #secondary section.widget form button {
   background-color: #007d60;
 }
-/* line 89, sass/partials/_metro.scss */
+/* line 93, sass/partials/_metro.scss */
 #secondary section.widget h2.widget-title {
   color: #fff;
   background: #007d60;
   padding: 4px 10px;
   margin: 1.0em 0 0;
 }
-/* line 97, sass/partials/_metro.scss */
+/* line 101, sass/partials/_metro.scss */
 #secondary #employee {
   margin-top: 4.0em;
   border-top: 1px solid rgba(0, 121, 92, 0.8);
   padding: 2.0em 0;
 }
-/* line 101, sass/partials/_metro.scss */
+/* line 105, sass/partials/_metro.scss */
 #secondary #employee img {
   margin: 0 auto;
   max-width: 160px;
   display: block;
 }
-/* line 106, sass/partials/_metro.scss */
+/* line 110, sass/partials/_metro.scss */
 #secondary #employee p.pledge_text {
   text-align: center;
   font-weight: 600;
 }
 
-/* line 113, sass/partials/_metro.scss */
+/* line 117, sass/partials/_metro.scss */
 h2.screen-reader-text {
   display: none;
 }

@@ -35,16 +35,12 @@
   
     
     <div class="social-links">
-      
-        <a href="https://www.facebook.com/metrosstorage" class="facebook" rel="me" target="_blank">
+        <a href="<?php echo $GLOBALS['facebook_url'] ?>" class="facebook" rel="me" target="_blank">
           <svg class="icon" title="Facebook">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#footer-icon-facebook"></use>
           </svg>
         </a>
-      
-
-      
-        <a href="https://twitter.com/metrosstorage" class="twitter" title="Twitter" rel="me" target="_blank">
+        <a href="<?php echo $GLOBALS['twitter_url'] ?>" class="twitter" title="Twitter" rel="me" target="_blank">
           <svg class="icon">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#footer-icon-twitter"></use>
           </svg>
