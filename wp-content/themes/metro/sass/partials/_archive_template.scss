@@ -1,3 +1,8 @@
+body.search{
+  #primary{
+    margin-top: 1.0em;
+  }
+}
 div.archive{
   background-color: #fff;
   @include clearfix;
@@ -20,6 +25,10 @@ div.archive{
       display: block;
       font-size: 160%;
       font-weight: 600;
+      a{
+        color:#fff;
+        font-weight:400;
+      }
     }
     button{
       background-color: #00795c;

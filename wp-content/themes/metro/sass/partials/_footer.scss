@@ -10,6 +10,7 @@
 		color:#e5e3e1;
 		font-size: 1.0em;
 		line-height: 1.25em;
+		@include outer-container();
 		a{
 			color:#e5e3e1;
 			&:hover{
@@ -26,6 +27,7 @@
 		div.RightContain{
 			float:right;
 			margin-right: 2.0em;
+			position:relative;
 			span.nav{
 				display: block;
 				text-align: right;
@@ -38,10 +40,9 @@
 		    overflow: hidden;
 		    display: block;
 		    margin-left: 10px;
-		    vertical-align: top;
-		    position: absolute;
-		    right:2.0em;
 		    margin-top: 1.0em;
+		    position: absolute;
+		    right:0;
 			}
 			.handicap-icon {
 			  background-position: -43px 0;
@@ -51,7 +52,7 @@
 			.social-links{
 				margin-bottom: .5em;
 				text-align: right;
-				padding: 15px 15px 0 15px;
+				padding: 15px 0 0 15px;
 				a{
 					margin: 0 15px 15px 0;
 					display: inline-block;

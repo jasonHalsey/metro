@@ -46,7 +46,7 @@
           </svg>
         </a>      
     </div>
-				<span class="nav"><a href="">Privacy Policy</a>&nbsp;|&nbsp;<a href="">Find Local Storage</a></span>
+				<span class="nav"><a href="">Privacy Policy</a></span>
 				<span>Copyright &copy; <?php echo date("Y"); ?> Metro Self Storage</span>
 				<span class="housing-icons">
 			  	<span class="handicap-icon access">Handicap Friendly</span>
