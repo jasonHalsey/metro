@@ -66,6 +66,13 @@ span.continue-reading{
 		display:block;	
 	}
 }
+
+.sml_submitbtn, input[type="submit"]{
+  background-color: $primaryGreen;
+}
+label{
+  margin-bottom: 0;
+}
 #secondary{
 	h2{
 		  font-family: 'Open Sans';
