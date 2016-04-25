@@ -16,7 +16,7 @@
 			<div class="leftContain">
 				<h4>Metro Self Storage</h4>
 				<p class="phone"><?php echo $GLOBALS['phone_number'] ?></p>
-				<p class="email"><a href="mailto:<?php echo $GLOBALS['email_url'] ?>">Email Us</a></p>
+				<p class="email"><a href="<?php echo $GLOBALS['email_url'] ?>">Email Us</a></p>
 			</div>
 
 			<div class="RightContain">
@@ -46,7 +46,7 @@
           </svg>
         </a>      
     </div>
-				<span class="nav"><a href="">Privacy Policy</a></span>
+				<span class="nav"><a href="<?php echo $GLOBALS['privacy_url'] ?>">Privacy Policy</a></span>
 				<span>Copyright &copy; <?php echo date("Y"); ?> Metro Self Storage</span>
 				<span class="housing-icons">
 			  	<span class="handicap-icon access">Handicap Friendly</span>
